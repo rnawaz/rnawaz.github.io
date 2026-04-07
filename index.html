@@ -149,6 +149,7 @@
         linear-gradient(90deg, rgba(79,156,249,0.035) 1px, transparent 1px);
       background-size: 55px 55px;
       mask-image: radial-gradient(ellipse 85% 85% at 50% 50%, black, transparent);
+      pointer-events: none;
     }
     .hero-inner {
       display: grid; grid-template-columns: 1fr auto;
@@ -502,6 +503,7 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#awards">Awards</a></li>
       <li><a href="#publications">Publications</a></li>
+      <li><a href="#cv">CV</a></li>
       <li><a href="#contact" class="nav-cta">Contact</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -551,7 +553,7 @@
           <a href="https://www.researchgate.net/profile/Rab-Nawaz-12" target="_blank" class="social-icon" title="ResearchGate">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a12.01 12.01 0 00-.262 3.956 11.38 11.38 0 00-.224 2.23c0 .327.02.612.055.859H15.6c-.054-.27-.082-.53-.082-.783 0-.7.127-1.5.38-2.406.255-.906.382-1.7.382-2.382 0-.705-.19-1.255-.574-1.648-.386-.394-.896-.59-1.533-.59-.593 0-1.05.189-1.373.57-.323.38-.484.88-.484 1.495 0 1.2.443 2.27 1.327 3.204.206.218.44.453.7.706-.12.067-.24.14-.36.215-1.2.726-1.8 1.665-1.8 2.816 0 .892.306 1.63.918 2.22.61.59 1.376.885 2.298.885.817 0 1.5-.22 2.05-.655.547-.435.97-1.06 1.266-1.873l.33.345c.556.583 1.166 1.2 1.84 1.852a7.5 7.5 0 001.853 1.387c.74.41 1.468.614 2.188.614.656 0 1.248-.158 1.773-.472.526-.314.94-.753 1.243-1.317.306-.563.455-1.207.455-1.93 0-1.165-.38-2.157-1.143-2.975-.762-.82-1.73-1.23-2.9-1.23-.9 0-1.68.232-2.34.698-.66.464-1.16 1.127-1.5 1.985-.068-.177-.147-.37-.233-.578a8.78 8.78 0 00-.433-.88c.258-.26.48-.518.666-.773.186-.255.344-.508.473-.757a4.59 4.59 0 00.265-.747c.063-.245.094-.5.094-.763 0-.757-.214-1.362-.64-1.818-.427-.455-1.013-.682-1.76-.682zm-1.46 10.35c.326-.43.748-.644 1.268-.644.52 0 .94.2 1.263.6.322.4.485.923.485 1.567 0 .39-.073.756-.22 1.1a2.125 2.125 0 01-.604.837c-.258.224-.55.336-.876.336-.37 0-.67-.136-.904-.41-.233-.274-.35-.617-.35-1.03 0-.46.132-.856.396-1.186l.54-.17z"/></svg>
           </a>
-          <a href="mailto:rab.nawaz@essex.ac.uk" class="social-icon" title="Email">
+          <a href="mailto:engr.rabnawaz12@gmail.com" class="social-icon" title="Email">
             <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
           </a>
         </div>
@@ -1293,6 +1295,30 @@
   </div>
 </section>
 
+<!-- ═══ CV ═══ -->
+<section id="cv" class="section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Curriculum Vitae</p>
+      <h2 class="section-title">Download My CV</h2>
+      <p class="section-sub">Download a full copy of my CV covering academic research, teaching experience, AI training roles, and publications.</p>
+    </div>
+    <div style="max-width:400px">
+
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:32px;transition:border-color 0.2s,transform 0.2s" onmouseover="this.style.borderColor='rgba(79,156,249,0.4)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+        <div style="font-size:2rem;margin-bottom:14px">📄</div>
+        <div style="font-size:1rem;font-weight:700;color:var(--white);margin-bottom:8px">Dr. Rab Nawaz — CV</div>
+        <div style="font-size:0.85rem;color:var(--muted);margin-bottom:24px;line-height:1.7">AI Trainer · Data Scientist · Lecturer · BCI Researcher. Covers professional experience, skills, projects, and publications.</div>
+        <a href="Rab_Nawaz_AI_trainer.pdf" download style="display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:9px;background:var(--accent);color:var(--white);font-weight:600;font-size:0.9rem;text-decoration:none;transition:opacity 0.2s,transform 0.2s;box-shadow:0 4px 20px rgba(79,156,249,0.28)" onmouseover="this.style.opacity='0.85';this.style.transform='translateY(-1px)'" onmouseout="this.style.opacity='1';this.style.transform='translateY(0)'">
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width:16px;height:16px"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+          Download CV (PDF)
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ═══ CONTACT ═══ -->
 <section id="contact" class="section">
   <div class="container">
@@ -1310,7 +1336,7 @@
           <div class="contact-item-icon"><svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg></div>
           <div>
             <div class="contact-item-label">Academic Email</div>
-            <div class="contact-item-value"><a href="mailto:rab.nawaz@essex.ac.uk">rab.nawaz@essex.ac.uk</a></div>
+            <div class="contact-item-value"><a href="mailto:engr.rabnawaz12@gmail.com">rab.nawaz@essex.ac.uk</a></div>
           </div>
         </div>
 
@@ -1383,7 +1409,7 @@
   <div class="container">
     <p>© 2026 Dr. Rab Nawaz &nbsp;·&nbsp; Lecturer, University of Essex &nbsp;·&nbsp; AI Trainer &amp; Data Science Consultant</p>
     <p style="margin-top:8px;font-size:0.77rem">
-      <a href="mailto:rab.nawaz@essex.ac.uk">rab.nawaz@essex.ac.uk</a> &nbsp;·&nbsp;
+      <a href="mailto:engr.rabnawaz12@gmail.com">engr.rabnawaz12@gmail.com</a> &nbsp;·&nbsp;
       <a href="https://github.com/rnawaz" target="_blank">github.com/rnawaz</a> &nbsp;·&nbsp;
       <a href="https://www.linkedin.com/in/rab-nawaz-513743181/" target="_blank">LinkedIn</a> &nbsp;·&nbsp;
       <a href="https://scholar.google.com/citations?user=-rbb5XMAAAAJ&hl=en" target="_blank">Google Scholar</a>
