@@ -491,7 +491,51 @@
       .pub-card { grid-template-columns: 1fr; }
       .interest-grid { grid-template-columns: 1fr; }
     }
-  </style>
+  
+    /* ── Grants ── */
+    .grants-subhead {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 36px 0 16px;
+    }
+    .grants-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .grant-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .grant-card:hover { border-color: rgba(79,156,249,0.4); transform: translateY(-2px); }
+    .grant-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+    .grant-body {}
+    .grant-role { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+    .grant-title { font-size: 0.88rem; font-weight: 700; color: var(--white); margin-bottom: 3px; line-height: 1.35; }
+    .grant-detail { font-size: 0.78rem; color: var(--muted); line-height: 1.5; }
+    .grant-tag {
+      display: inline-block;
+      margin-top: 6px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 20px;
+      background: rgba(79,156,249,0.1);
+      color: var(--accent);
+      border: 1px solid rgba(79,156,249,0.25);
+    }
+    @media (max-width: 600px) { .grants-grid { grid-template-columns: 1fr; } }
+
+</style>
 </head>
 <body>
 
@@ -1179,8 +1223,8 @@
 <section id="awards" class="section">
   <div class="container">
     <div class="section-header">
-      <p class="section-label">Recognition</p>
-      <h2 class="section-title">Awards &amp; Achievements</h2>
+      <p class="section-label">Recognition &amp; Funding</p>
+      <h2 class="section-title">Awards &amp; Grants</h2>
     </div>
     <div class="awards-grid">
 
@@ -1227,6 +1271,52 @@
       </div>
 
     </div>
+
+    <p class="grants-subhead">Research Funding</p>
+    <div class="grants-grid">
+
+      <div class="grant-card">
+        <div class="grant-icon">👑</div>
+        <div class="grant-body">
+          <div class="grant-role">Co-Investigator &nbsp;<span style="background:rgba(34,197,94,0.15);color:#22c55e;font-size:0.68rem;font-weight:700;padding:2px 7px;border-radius:10px;border:1px solid rgba(34,197,94,0.3);">FUNDED</span></div>
+          <div class="grant-title">Royal Society International Exchanges &mdash; Motor Intention Decoding: A Cross-Cultural Approach (IEC&#92;NSFC&#92;242277)</div>
+          <div class="grant-detail">The Royal Society / NSFC &mdash; <strong>£11,800</strong> &mdash; UK-China collaboration on advancing BCI technology for motor intention decoding in individuals with neurological conditions. PI: Dr M. T. Sadiq (University of Essex); Co-applicant: Dr Wenwen Chang (Lanzhou Jiaotong University, China).</div>
+          <span class="grant-tag">2025&ndash;2026</span>
+        </div>
+      </div>
+
+      <div class="grant-card">
+        <div class="grant-icon">🇦🇹</div>
+        <div class="grant-body">
+          <div class="grant-role">Principal Investigator &nbsp;<span style="background:rgba(34,197,94,0.15);color:#22c55e;font-size:0.68rem;font-weight:700;padding:2px 7px;border-radius:10px;border:1px solid rgba(34,197,94,0.3);">FUNDED</span></div>
+          <div class="grant-title">BCI &amp; Neurotechnology Research Grant (Ref. ICM-2020-00116)</div>
+          <div class="grant-detail">Federal Ministry of Education, Science and Research (BMBWF), Austria &mdash; <strong>~USD 8,000</strong> &mdash; Competitive international collaboration grant supporting BCI and neural signal processing research.</div>
+          <span class="grant-tag">2020&ndash;2021</span>
+        </div>
+      </div>
+
+      <div class="grant-card">
+        <div class="grant-icon">🏥</div>
+        <div class="grant-body">
+          <div class="grant-role">Co-Investigator &nbsp;<span style="background:rgba(34,197,94,0.15);color:#22c55e;font-size:0.68rem;font-weight:700;padding:2px 7px;border-radius:10px;border:1px solid rgba(34,197,94,0.3);">FUNDED</span></div>
+          <div class="grant-title">Neuropathic Pain in Spinal Cord Injury &mdash; INSPIRE Foundation UK (GN21NE581)</div>
+          <div class="grant-detail">INSPIRE Foundation UK | IRAS: 310267 &mdash; NHS-partnered longitudinal EEG biomarker study on chronic neuropathic pain in spinal cord injury patients, University of Glasgow.</div>
+          <span class="grant-tag">2021&ndash;2023</span>
+        </div>
+      </div>
+
+      <div class="grant-card">
+        <div class="grant-icon">🎓</div>
+        <div class="grant-body">
+          <div class="grant-role">Contributor &amp; Co-Investigator &nbsp;<span style="background:rgba(34,197,94,0.15);color:#22c55e;font-size:0.68rem;font-weight:700;padding:2px 7px;border-radius:10px;border:1px solid rgba(34,197,94,0.3);">FUNDED</span></div>
+          <div class="grant-title">PhD-Era Research Grants (UTARRF &times;2 &amp; FRGS)</div>
+          <div class="grant-detail">UTARRF Internal Research Fund &times;2 + Fundamental Research Grant Scheme (FRGS), Ministry of Higher Education Malaysia &mdash; supported EEG neurofeedback and BCI research during doctoral studies at UTAR.</div>
+          <span class="grant-tag">2016&ndash;2021</span>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </section>
 
@@ -1236,12 +1326,12 @@
     <div class="section-header">
       <p class="section-label">Research Output</p>
       <h2 class="section-title">Publications</h2>
-      <p class="section-sub">Selected peer-reviewed journal articles and conference papers. Full list on <a href="https://scholar.google.com/citations?user=-rbb5XMAAAAJ&hl=en" target="_blank">Google Scholar</a>.</p>
+      <p class="section-sub">Complete list of peer-reviewed journal articles and conference papers. Also on <a href="https://scholar.google.com/citations?user=-rbb5XMAAAAJ&hl=en" target="_blank">Google Scholar</a>.</p>
     </div>
 
     <div class="pub-tabs">
-      <button class="pub-tab active" onclick="switchTab('journals', this)">Journal Articles (14)</button>
-      <button class="pub-tab" onclick="switchTab('conferences', this)">Conference Papers (9)</button>
+      <button class="pub-tab active" onclick="switchTab('journals', this)">Journal Articles (18)</button>
+      <button class="pub-tab" onclick="switchTab('conferences', this)">Conference Papers (13)</button>
     </div>
 
     <!-- Journals -->
@@ -1250,65 +1340,95 @@
       <div class="pub-card">
         <div><div class="pub-year">2026</div><div class="pub-num">#1</div></div>
         <div>
-          <div class="pub-title">Towards the development of a deep learning framework using adaptive and non-adaptive time-frequency features for EEG-based depression therapy prediction</div>
-          <div class="pub-authors">H. Akbari, S. Bagherzadeh, J. FarhadiSedehi, R. Nawaz, et al.</div>
-          <div class="pub-journal">Brain Sciences, vol. 16, no. 3, p. 301, 2026</div>
-          <div class="pub-tags"><span class="tag">Deep Learning</span><span class="tag">EEG</span><span class="tag">Depression</span></div>
+          <div class="pub-title">Advanced multimodal learning for seizure detection and prediction: concept, challenges, and future directions</div>
+          <div class="pub-authors">I. Ahmad, F. Ahmad, S. T. Aboyeji, Y. Zhang, P. Yang, J. A. Khan, R. Nawaz, B. Lei</div>
+          <div class="pub-journal"><em>arXiv preprint</em> arXiv:2601.05095, 2026 &nbsp;<span class="tag" style="font-size:0.68rem;padding:1px 6px;">Preprint</span></div>
+          <div class="pub-tags"><span class="tag">Seizure Detection</span><span class="tag">Multimodal AI</span><span class="tag">Deep Learning</span></div>
         </div>
       </div>
 
       <div class="pub-card">
         <div><div class="pub-year">2026</div><div class="pub-num">#2</div></div>
         <div>
+          <div class="pub-title">Towards the development of a deep learning framework using adaptive and non-adaptive time-frequency features for EEG-based depression therapy prediction</div>
+          <div class="pub-authors">H. Akbari, S. Bagherzadeh, J. FarhadiSedehi, R. Nawaz, R. Rostami, R. Kazemi, M. Sadiq, H. Chen, M. Mete</div>
+          <div class="pub-journal">Brain Sciences, vol. 16, no. 3, p. 301, 2026</div>
+          <div class="pub-tags"><span class="tag">Deep Learning</span><span class="tag">EEG</span><span class="tag">Depression</span></div>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div><div class="pub-year">2026</div><div class="pub-num">#3</div></div>
+        <div>
           <div class="pub-title">NeuRestore: A new benchmark for wearable BCI-based neuromotor training in real-world</div>
-          <div class="pub-authors">A. Chowdhury, M. Haque, R. Nawaz, et al.</div>
-          <div class="pub-journal">IEEE Access, vol. 14, pp. 10064–10080, 2026</div>
+          <div class="pub-authors">A. Chowdhury, M. Haque, R. Nawaz, U. R. Dholariya, K. R. Jani, R. P. Karmur, et al.</div>
+          <div class="pub-journal">IEEE Access, 2026</div>
           <div class="pub-tags"><span class="tag">BCI</span><span class="tag">Wearable</span><span class="tag">Neuromotor</span></div>
         </div>
       </div>
 
       <div class="pub-card">
-        <div><div class="pub-year">2025</div><div class="pub-num">#3</div></div>
+        <div><div class="pub-year">2026</div><div class="pub-num">#4</div></div>
         <div>
-          <div class="pub-title">An AI-driven interpretable multiview feature learning approach for EEG-based epileptic seizure detection</div>
-          <div class="pub-authors">I. Ahmad, S. Ayouni, F. Ahmad, R. Nawaz, et al.</div>
-          <div class="pub-journal">IEEE Journal of Biomedical and Health Informatics, 2025</div>
-          <div class="pub-tags"><span class="tag">AI</span><span class="tag">Epilepsy</span><span class="tag">EEG</span></div>
+          <div class="pub-title">Digital biomarkers for early detection of Alzheimer's disease: a comprehensive review and bibliometric analysis</div>
+          <div class="pub-authors">R. Ullah, S. Akbar, R. Nawaz, Z. Ali, V. K. Singh, S. A. C. Bukhari</div>
+          <div class="pub-journal">Journal of Dementia and Alzheimer's Disease, vol. 3, no. 2, p. 18, 2026</div>
+          <div class="pub-tags"><span class="tag">Alzheimer's</span><span class="tag">Biomarkers</span><span class="tag">Review</span></div>
         </div>
       </div>
 
       <div class="pub-card">
-        <div><div class="pub-year">2025</div><div class="pub-num">#4</div></div>
+        <div><div class="pub-year">2026</div><div class="pub-num">#5</div></div>
         <div>
-          <div class="pub-title">A deep learning approach for non-invasive Alzheimer's monitoring using microwave radar data</div>
-          <div class="pub-authors">X. Chen, D. Zeng, R. Ullah, R. Nawaz, et al.</div>
-          <div class="pub-journal">Neural Networks, vol. 181, p. 106778, 2025</div>
-          <div class="pub-tags"><span class="tag">Deep Learning</span><span class="tag">Alzheimer's</span><span class="tag">Radar</span></div>
-        </div>
-      </div>
-
-      <div class="pub-card">
-        <div><div class="pub-year">2025</div><div class="pub-num">#5</div></div>
-        <div>
-          <div class="pub-title">An out-of-the-lab evaluation of dry EEG technology on a large-scale motor imagery BCI dataset</div>
-          <div class="pub-authors">M. Sultana, A. Matran-Fernandez, S. Halder, R. Nawaz, et al.</div>
-          <div class="pub-journal">Journal of Neural Engineering, vol. 22, no. 6, p. 066045, 2025</div>
-          <div class="pub-tags"><span class="tag">BCI</span><span class="tag">Motor Imagery</span><span class="tag">Dry EEG</span></div>
+          <div class="pub-title">AI-driven resource allocation in cloud computing: a systematic review revealing critical sustainability and evaluation gaps</div>
+          <div class="pub-authors">S. Alam, M. A. Ramzan, M. Zubair, U. Ullah, R. Nawaz, R. Ullah, et al.</div>
+          <div class="pub-journal">Computing, vol. 108, no. 5, p. 67, 2026</div>
+          <div class="pub-tags"><span class="tag">AI</span><span class="tag">Cloud Computing</span><span class="tag">Review</span></div>
         </div>
       </div>
 
       <div class="pub-card">
         <div><div class="pub-year">2025</div><div class="pub-num">#6</div></div>
         <div>
-          <div class="pub-title">A real time action scoring system for movement analysis and feedback in physical therapy using human pose estimation</div>
-          <div class="pub-authors">R. Ullah, I. Asghar, R. Nawaz, et al.</div>
+          <div class="pub-title">An AI-driven interpretable multiview feature learning approach for EEG-based epileptic seizure detection</div>
+          <div class="pub-authors">I. Ahmad, S. Ayouni, F. Ahmad, H. Li, S. T. Aboyeji, H. Bilal, I. Ullah, M. S. Atoum, C. Choi, R. Nawaz, B. Lei</div>
+          <div class="pub-journal">IEEE Journal of Biomedical and Health Informatics, pp. 1&ndash;14, 2025</div>
+          <div class="pub-tags"><span class="tag">AI</span><span class="tag">Epilepsy</span><span class="tag">EEG</span></div>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div><div class="pub-year">2025</div><div class="pub-num">#7</div></div>
+        <div>
+          <div class="pub-title">A deep learning approach for non-invasive Alzheimer's monitoring using microwave radar data</div>
+          <div class="pub-authors">Farhatullah, X. Chen, D. Zeng, R. Ullah, R. Nawaz, J. Xu, T. Arslan</div>
+          <div class="pub-journal">Neural Networks, vol. 181, p. 106778, 2025</div>
+          <div class="pub-tags"><span class="tag">Deep Learning</span><span class="tag">Alzheimer's</span><span class="tag">Radar</span></div>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div><div class="pub-year">2025</div><div class="pub-num">#8</div></div>
+        <div>
+          <div class="pub-title">An out-of-the-lab evaluation of dry EEG technology on a large-scale motor imagery brain-computer interface dataset</div>
+          <div class="pub-authors">M. Sultana, A. Matran-Fernandez, S. Halder, R. Nawaz, O. Jain, R. Scherer, R. Chavarriaga, J. del R. Mill&aacute;n, S. Perdikis</div>
+          <div class="pub-journal">Journal of Neural Engineering, vol. 22, no. 6, p. 066045, 2025</div>
+          <div class="pub-tags"><span class="tag">BCI</span><span class="tag">Motor Imagery</span><span class="tag">Dry EEG</span></div>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div><div class="pub-year">2025</div><div class="pub-num">#9</div></div>
+        <div>
+          <div class="pub-title">A real-time action scoring system for movement analysis and feedback in physical therapy using human pose estimation</div>
+          <div class="pub-authors">R. Ullah, I. Asghar, R. Nawaz, C. Stacey, S. Akbar, P. Bishop</div>
           <div class="pub-journal">Scientific Reports, vol. 15, no. 1, p. 44784, 2025</div>
           <div class="pub-tags"><span class="tag">AI</span><span class="tag">Pose Estimation</span><span class="tag">Physical Therapy</span></div>
         </div>
       </div>
 
       <div class="pub-card">
-        <div><div class="pub-year">2024</div><div class="pub-num">#7</div></div>
+        <div><div class="pub-year">2024</div><div class="pub-num">#10</div></div>
         <div>
           <div class="pub-title">Attention-related power and functional connectivity modulation associated with long-term alpha neurofeedback training</div>
           <div class="pub-authors">D. Mahmood, H. Nisar, R. Nawaz, V. V. Yap, C.-Y. Tsai</div>
@@ -1318,17 +1438,37 @@
       </div>
 
       <div class="pub-card">
-        <div><div class="pub-year">2024</div><div class="pub-num">#8</div></div>
+        <div><div class="pub-year">2024</div><div class="pub-num">#11</div></div>
         <div>
-          <div class="pub-title">Electroencephalography longitudinal markers of central neuropathic pain intensity in spinal cord injury: A home-based pilot study</div>
-          <div class="pub-authors">R. Nawaz, H. Suen, R. Ullah, et al.</div>
+          <div class="pub-title">Electroencephalography longitudinal markers of central neuropathic pain intensity in spinal cord injury: a home-based pilot study</div>
+          <div class="pub-authors">R. Nawaz, H. Suen, R. Ullah, M. Purcell, S. Diggin, E. McCaughey, A. Vuckovic</div>
           <div class="pub-journal">Biomedicines, vol. 12, no. 12, p. 2751, 2024</div>
           <div class="pub-tags"><span class="tag">EEG</span><span class="tag">Neuropathic Pain</span><span class="tag">Home-Based</span></div>
         </div>
       </div>
 
       <div class="pub-card">
-        <div><div class="pub-year">2023</div><div class="pub-num">#10</div></div>
+        <div><div class="pub-year">2024</div><div class="pub-num">#12</div></div>
+        <div>
+          <div class="pub-title">Research on ECG signal reconstruction based on improved weighted nuclear norm minimization and approximate message passing algorithm</div>
+          <div class="pub-authors">B. Zhang, X. Zhu, F. A. Khan, S. S. Jamal, A. Al Mazroa, R. Nawaz</div>
+          <div class="pub-journal">Frontiers in Neuroinformatics, vol. 18, p. 1454244, 2024</div>
+          <div class="pub-tags"><span class="tag">ECG</span><span class="tag">Signal Reconstruction</span><span class="tag">Neural Signals</span></div>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div><div class="pub-year">2024</div><div class="pub-num">#13</div></div>
+        <div>
+          <div class="pub-title">Classification of skin lesion with features extraction using quantum Chebyshev polynomials and autoencoder from wavelet-transformed images</div>
+          <div class="pub-authors">X. Chen, D. Zeng, J. Xu, R. Nawaz, R. Ullah, et al.</div>
+          <div class="pub-journal">IEEE Access, vol. 12, pp. 193923&ndash;193936, 2024</div>
+          <div class="pub-tags"><span class="tag">Deep Learning</span><span class="tag">Medical Imaging</span><span class="tag">Skin Lesion</span></div>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div><div class="pub-year">2023</div><div class="pub-num">#14</div></div>
         <div>
           <div class="pub-title">Exploring the effects of EEG-based alpha neurofeedback on working memory capacity in healthy participants</div>
           <div class="pub-authors">R. Nawaz, G. Wood, H. Nisar, V. V. Yap</div>
@@ -1338,7 +1478,7 @@
       </div>
 
       <div class="pub-card">
-        <div><div class="pub-year">2022</div><div class="pub-num">#11</div></div>
+        <div><div class="pub-year">2022</div><div class="pub-num">#15</div></div>
         <div>
           <div class="pub-title">The effect of alpha neurofeedback training on cognitive performance in healthy adults</div>
           <div class="pub-authors">R. Nawaz, H. Nisar, V. V. Yap, C.-Y. Tsai</div>
@@ -1348,31 +1488,31 @@
       </div>
 
       <div class="pub-card">
-        <div><div class="pub-year">2020</div><div class="pub-num">#12</div></div>
-        <div>
-          <div class="pub-title">Comparison of different feature extraction methods for EEG-based emotion recognition</div>
-          <div class="pub-authors">R. Nawaz, K. H. Cheah, H. Nisar, V. V. Yap</div>
-          <div class="pub-journal">Biocybernetics and Biomedical Engineering, vol. 40, no. 3, pp. 910–926, 2020</div>
-          <div class="pub-tags"><span class="tag">Emotion Recognition</span><span class="tag">Feature Extraction</span><span class="tag">EEG</span></div>
-        </div>
-      </div>
-
-      <div class="pub-card">
-        <div><div class="pub-year">2020</div><div class="pub-num">#13</div></div>
+        <div><div class="pub-year">2020</div><div class="pub-num">#16</div></div>
         <div>
           <div class="pub-title">Changes in spectral power and functional connectivity of response-conflict task after neurofeedback training</div>
           <div class="pub-authors">R. Nawaz, H. Nisar, Y. V. Voon</div>
-          <div class="pub-journal">IEEE Access, vol. 8, pp. 139444–139459, 2020</div>
+          <div class="pub-journal">IEEE Access, vol. 8, pp. 139444&ndash;139459, 2020</div>
           <div class="pub-tags"><span class="tag">Neurofeedback</span><span class="tag">Functional Connectivity</span><span class="tag">EEG</span></div>
         </div>
       </div>
 
       <div class="pub-card">
-        <div><div class="pub-year">2018</div><div class="pub-num">#14</div></div>
+        <div><div class="pub-year">2020</div><div class="pub-num">#17</div></div>
+        <div>
+          <div class="pub-title">Comparison of different feature extraction methods for EEG-based emotion recognition</div>
+          <div class="pub-authors">R. Nawaz, K. H. Cheah, H. Nisar, V. V. Yap</div>
+          <div class="pub-journal">Biocybernetics and Biomedical Engineering, vol. 40, no. 3, pp. 910&ndash;926, 2020</div>
+          <div class="pub-tags"><span class="tag">Emotion Recognition</span><span class="tag">Feature Extraction</span><span class="tag">EEG</span></div>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div><div class="pub-year">2018</div><div class="pub-num">#18</div></div>
         <div>
           <div class="pub-title">The effect of music on human brain: frequency domain and time series analysis using electroencephalogram</div>
           <div class="pub-authors">R. Nawaz, H. Nisar, Y. V. Voon</div>
-          <div class="pub-journal">IEEE Access, vol. 6, pp. 45191–45205, 2018</div>
+          <div class="pub-journal">IEEE Access, vol. 6, pp. 45191&ndash;45205, 2018</div>
           <div class="pub-tags"><span class="tag">EEG</span><span class="tag">Music &amp; Brain</span><span class="tag">Signal Processing</span></div>
         </div>
       </div>
@@ -1383,77 +1523,127 @@
     <div class="pub-panel" id="tab-conferences">
 
       <div class="pub-card">
-        <div><div class="pub-year">2024</div><div class="pub-num">C1</div></div>
+        <div><div class="pub-year">2025</div><div class="pub-num">C1</div></div>
         <div>
-          <div class="pub-title">To repeat or not to repeat? ERP-based assessment of the level of consciousness, a case study</div>
-          <div class="pub-authors">S. Halder, A. Matran-Fernandez, R. Nawaz, et al.</div>
-          <div class="pub-journal">BCI Conference Graz 2024</div>
-          <div class="pub-tags"><span class="tag">ERP</span><span class="tag">BCI</span></div>
+          <div class="pub-title">MindGauge: A GUI-based machine learning tool for EEG workload classification</div>
+          <div class="pub-authors">T. Kapoor, I. Al-Taie, R. Ullah, M. T. Sadiq, A. M. Basbrain, R. Nawaz</div>
+          <div class="pub-journal">IEEE IntelliSecAI 2025</div>
+          <div class="pub-tags"><span class="tag">EEG</span><span class="tag">Workload</span><span class="tag">ML Tool</span></div>
         </div>
       </div>
 
       <div class="pub-card">
-        <div><div class="pub-year">2024</div><div class="pub-num">C2</div></div>
+        <div><div class="pub-year">2025</div><div class="pub-num">C2</div></div>
+        <div>
+          <div class="pub-title">Enhancing speaker diarization in forensic audio: a comparative analysis of machine learning algorithms for gender classification</div>
+          <div class="pub-authors">R. Ullah, I. Asghar, G. Evans, R. Nawaz, S. Akbar, D. A. Roberts</div>
+          <div class="pub-journal">International Conference on Smart Systems and Emerging Technologies (SMARTTECH), pp. 150&ndash;161, 2025</div>
+          <div class="pub-tags"><span class="tag">Forensic Audio</span><span class="tag">Speaker Diarization</span><span class="tag">ML</span></div>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div><div class="pub-year">2024</div><div class="pub-num">C3</div></div>
+        <div>
+          <div class="pub-title">To repeat or not to repeat? ERP-based assessment of the level of consciousness &mdash; a case study</div>
+          <div class="pub-authors">S. Halder, A. Matran-Fernandez, R. Nawaz, M. Lopes da Silva, T. Bertoni, J.-P. Noel, J. J&ouml;hr, A. Serino, K. Diserens, R. Scherer, et al.</div>
+          <div class="pub-journal">9th Graz Brain-Computer Interface Conference 2024</div>
+          <div class="pub-tags"><span class="tag">ERP</span><span class="tag">BCI</span><span class="tag">Consciousness</span></div>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div><div class="pub-year">2024</div><div class="pub-num">C4</div></div>
         <div>
           <div class="pub-title">Evaluating dry EEG technology out of the lab</div>
-          <div class="pub-authors">M. Sultana, O. Jain, S. Halder, R. Nawaz, et al.</div>
+          <div class="pub-authors">M. Sultana, O. Jain, S. Halder, A. Matran-Fernandez, R. Nawaz, R. Scherer, R. Chavarriaga, J. del R. Mill&aacute;n, S. Perdikis</div>
           <div class="pub-journal">IEEE MetroXRAINE 2024</div>
-          <div class="pub-tags"><span class="tag">EEG</span><span class="tag">XR &amp; AI</span></div>
+          <div class="pub-tags"><span class="tag">EEG</span><span class="tag">Wearable</span><span class="tag">BCI</span></div>
         </div>
       </div>
 
       <div class="pub-card">
-        <div><div class="pub-year">2022</div><div class="pub-num">C3</div></div>
+        <div><div class="pub-year">2024</div><div class="pub-num">C5</div></div>
+        <div>
+          <div class="pub-title">Empowering healthcare with deep learning: an application for early detection of skin cancer</div>
+          <div class="pub-authors">K. J. Oluwatobi, I. Asghar, M. Diyan, R. Nawaz, S. Saleem, R. Ullah, J. Ahmad</div>
+          <div class="pub-journal">International Conference on Intelligent Systems and Pattern Recognition (ISPR), pp. 27&ndash;41, 2024</div>
+          <div class="pub-tags"><span class="tag">Deep Learning</span><span class="tag">Skin Cancer</span><span class="tag">Healthcare AI</span></div>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div><div class="pub-year">2023</div><div class="pub-num">C6</div></div>
+        <div>
+          <div class="pub-title">Prediction of central neuropathic pain in subacute spinal cord injury: effects of EEG dataset size on classifier performance</div>
+          <div class="pub-authors">K. Anderson, S. Stein, M. Purcell, M. Belci, R. Nawaz, Khine, A. Vuckovic</div>
+          <div class="pub-journal">62nd International Spinal Cord Society (ISCoS) Annual Scientific Meeting, Edinburgh, 2023</div>
+          <div class="pub-tags"><span class="tag">EEG</span><span class="tag">Neuropathic Pain</span><span class="tag">Spinal Cord</span></div>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div><div class="pub-year">2022</div><div class="pub-num">C7</div></div>
         <div>
           <div class="pub-title">Channel selection and classification of EEG-based motor imagery signals using machine learning</div>
           <div class="pub-authors">R. Nawaz, P. K. Wang, M. B. Khan, H. Nisar</div>
-          <div class="pub-journal">IEEE ICETST 2022, 🏆 Best Paper Award</div>
+          <div class="pub-journal">IEEE ICETST 2022 &nbsp;&#127942; Best Paper Award</div>
           <div class="pub-tags"><span class="tag">BCI</span><span class="tag">Motor Imagery</span><span class="tag">ML</span></div>
         </div>
       </div>
 
       <div class="pub-card">
-        <div><div class="pub-year">2021</div><div class="pub-num">C4</div></div>
+        <div><div class="pub-year">2021</div><div class="pub-num">C8</div></div>
         <div>
           <div class="pub-title">Analyses of Stroop EEG using event related potentials and time-frequency decomposition</div>
           <div class="pub-authors">R. Nawaz, H. Nisar, Y. V. Voon</div>
           <div class="pub-journal">IEEE-EMBS IECBES 2020</div>
-          <div class="pub-tags"><span class="tag">ERP</span><span class="tag">EEG</span></div>
+          <div class="pub-tags"><span class="tag">ERP</span><span class="tag">EEG</span><span class="tag">Stroop</span></div>
         </div>
       </div>
 
       <div class="pub-card">
-        <div><div class="pub-year">2020</div><div class="pub-num">C5</div></div>
+        <div><div class="pub-year">2020</div><div class="pub-num">C9</div></div>
         <div>
-          <div class="pub-title">Reducing sensors in mental imagery-based cognitive task for brain computer interface</div>
+          <div class="pub-title">Reducing sensors in mental imagery-based cognitive task for brain-computer interface</div>
           <div class="pub-authors">H. Nisar, T. C. Hoe, R. Nawaz</div>
           <div class="pub-journal">IEEE ICSPCS 2020</div>
-          <div class="pub-tags"><span class="tag">BCI</span><span class="tag">Mental Imagery</span></div>
+          <div class="pub-tags"><span class="tag">BCI</span><span class="tag">Mental Imagery</span><span class="tag">Sensor Reduction</span></div>
         </div>
       </div>
 
       <div class="pub-card">
-        <div><div class="pub-year">2019</div><div class="pub-num">C6</div></div>
+        <div><div class="pub-year">2019</div><div class="pub-num">C10</div></div>
         <div>
           <div class="pub-title">Can background music help to relieve stress? An EEG analysis</div>
-          <div class="pub-authors">R. Nawaz, J. T. Ng, H. Nisar, Y. V. Voon</div>
+          <div class="pub-authors">R. Nawaz, H. Nisar, J. T. Ng, Y. V. Voon</div>
           <div class="pub-journal">IEEE ICSIPA 2019</div>
           <div class="pub-tags"><span class="tag">EEG</span><span class="tag">Stress</span><span class="tag">Music</span></div>
         </div>
       </div>
 
       <div class="pub-card">
-        <div><div class="pub-year">2018</div><div class="pub-num">C7</div></div>
+        <div><div class="pub-year">2019</div><div class="pub-num">C11</div></div>
         <div>
-          <div class="pub-title">Recognition of useful music for emotion enhancement based on dimensional model</div>
-          <div class="pub-authors">R. Nawaz, H. Nisar, V. V. Yap</div>
-          <div class="pub-journal">IEEE ICBAPS 2018, 🏆 Best Paper Award</div>
-          <div class="pub-tags"><span class="tag">Emotion</span><span class="tag">Music</span><span class="tag">Neural Networks</span></div>
+          <div class="pub-title">Image stitching of microscopic wastewater images</div>
+          <div class="pub-authors">R. Nawaz, L. Y. Tan, H. Nisar, M. B. Khan</div>
+          <div class="pub-journal">AIP Conference Proceedings, vol. 2157, no. 1, p. 020004, 2019</div>
+          <div class="pub-tags"><span class="tag">Image Processing</span><span class="tag">Computer Vision</span></div>
         </div>
       </div>
 
       <div class="pub-card">
-        <div><div class="pub-year">2018</div><div class="pub-num">C8</div></div>
+        <div><div class="pub-year">2018</div><div class="pub-num">C12</div></div>
+        <div>
+          <div class="pub-title">Recognition of useful music for emotion enhancement based on dimensional model</div>
+          <div class="pub-authors">R. Nawaz, H. Nisar, V. V. Yap</div>
+          <div class="pub-journal">IEEE ICBAPS 2018 &nbsp;&#127942; Best Paper Award</div>
+          <div class="pub-tags"><span class="tag">Emotion</span><span class="tag">Music</span><span class="tag">Dimensional Model</span></div>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div><div class="pub-year">2018</div><div class="pub-num">C13</div></div>
         <div>
           <div class="pub-title">Acoustic feature extraction from music songs to predict emotions using neural networks</div>
           <div class="pub-authors">R. Nawaz, H. Nisar, Y. V. Voon, T. P. Yee</div>
@@ -1462,19 +1652,9 @@
         </div>
       </div>
 
-      <div class="pub-card">
-        <div><div class="pub-year">2019</div><div class="pub-num">C9</div></div>
-        <div>
-          <div class="pub-title">Image stitching of microscopic wastewater images</div>
-          <div class="pub-authors">R. Nawaz, L. Y. Tan, H. Nisar, M. B. Khan</div>
-          <div class="pub-journal">AIP Conference Proceedings, vol. 2157, 2019</div>
-          <div class="pub-tags"><span class="tag">Image Processing</span><span class="tag">Computer Vision</span></div>
-        </div>
-      </div>
-
     </div>
 
-    <div style="text-align:center;margin-top:36px">
+        <div style="text-align:center;margin-top:36px">
       <a href="https://scholar.google.com/citations?user=-rbb5XMAAAAJ&hl=en" target="_blank" class="btn-secondary">
         <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width:15px;height:15px"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg>
         View All on Google Scholar
